@@ -1,0 +1,99 @@
+* {box-sizing: border-box;}
+
+/* style the container */
+.container {
+  border-radius: 10px;
+  background-color: white;
+  max-width: 1000px;
+
+  margin:auto;
+  
+}
+
+.bg_img{
+  background-image: url("bg.jpg");
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 5;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ p {
+   font-family:verdana;
+   text-align:center;
+   font-style:oblique;
+ }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+label{
+    font-size: large;
+    color: blue;
+}
+
+/* bottom container */
+a {
+  text-align: center;
+  background-color: #ff0066;
+  border-radius: 0px 0px 4px 4px;
+  color: black;
+  display: inline;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
