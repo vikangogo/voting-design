@@ -1,51 +1,53 @@
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="theme.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-<body>
-    <div class= "bg_img">
-    <div class="container" >
-          <form action="/action_page.php" >
-             <div class="row">
-              <div class="col">
-                <div class="img_container">
-                    <img src="votelogo.jpg" alt="voting logo">
-                </div>
-                <div>
-                    <p>Together we can break barriers and build a better tommorow.<br><br> <span style= "font-weight: bold;">Your vote counts!</span></p>
-                    <p>A change to see</p>
-                </div>
-              </div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Register</title>
+  </head>
+  <body>
+    <div class= "container">
+      <div class= "form-container">
+        <div class ="wrap-container">
 
-              <div class="col">
-                    
-                    <input type="text" name="fname" placeholder="Enter First Name" style = "border-style: inset;"required><br>
-
-                    <input type="text" name="sname" placeholder="Enter Second Name" style = "border-style: inset;"required><br>
- 
-                    <input type="text" name="email"placeholder="Enter Password" style = "border-style: inset;" required><br>
-
-                    <input type="password" name="pwd" placeholder="Enter Password" style = "border-style: inset;"required><br>
-
-                    <input type="password" name="rpwd" placeholder="Repeat Password" style = "border-style: inset;"required><br>
-                    <br>
-                    <br>
-                    
-                     <input type="submit" value="Register" style="background-color:#ff0066;">
-                    
-                    <a href="login.html" > Already have an account? Click to Login</a><br>
-               </div>
-              
-             </div>
-            </form>
+      <div class = "img-container">
+          <img src = "votelogo.jpg" alt="Vote Logo">
+        </div>
+        <form class = "login-form">
+           <span class = "form-title">Member Register</span>
+           <div class = "wrap-input" >
+             <input class="input-form" type="text" name="fname" placeholder="First Name">
+            </div>
+            <div class = "wrap-input" >
+              <input class="input-form" type="text" name="sname" placeholder="Second Name">
+            </div>
+            <div class = "wrap-input" >
+              <input class="input-form" type="text" name="email" placeholder="Email">
+              <span class="symbol-input">
+                <span class="focus-input100"></span>
+               <i class="fa fa-envelope" aria-hidden="true"></i>
+             </span>
+            </div>
+            <div class="wrap-input">
+            <input class="input-form" type="password" name="pass" placeholder="Password">
+            <span class="focus-input"></span>
+            <span class="symbol-input">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+            </div>
+            <div class = "button-container">
+              <button class="form-button"href="user.html">Register</button>
+            </div>
+            <div>
+              <a class="text1" href="index.html">Have an Account already? Click to Login<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+              </a>
+            </div>
+          </form>
           </div>
-       
-        
-    </div>
-   
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+      </div>
+      </div>
+
+  </body>
 </html>

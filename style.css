@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background: lightgrey;
+  overflow-y: visible;
+}
+#sidemenu .company-title{
+  color:white;
+  padding: 15px 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+}
+#sidemenu{
+  background: #421f60;
+  width: 280px;
+  cursor: auto;
+  position:fixed;
+  top: 0;
+  bottom:0;
+
+}
+#sidemenu nav{
+  padding-top: 10px;
+}
+#sidemenu nav a{
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 15px 30px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+#sidemenu nav a.active{
+  text-decoration: none;
+  border-left: 5px solid;
+  background-color: #35194d;
+  padding: 15px 30px 15px 25px;
+  color: white;
+
+}
+#sidemenu nav a:hover{
+  background:#1a0c27;
+  border-left: 5px solid;
+  padding: 15px 30px 15px 25px;
+  text-decoration: none;
+  border-left: 5px solid;
+  color: white;
+}
+#sidemenu nav a:hover .fa{
+  color: white;
+}
+#sidemenu nav a .fa{
+  color: #9053c7;
+  font-size: 1.0em;
+  margin-right:0.8em;
+  display: inline-block;
+  width: 30px;
+  position: relative;
+  top:2px;
+}
+
+header{
+  margin-left: 280px;
+  padding: 10px;
+  background: white;
+}
+header .search-area{
+  display: inline-block;
+  width:80%;
+}
+header .fa{
+  color: #9053c7;
+}
+header .search-area  input[type="text"]{
+  background: transparent;
+  border:none;
+  font-size: 1.3em;
+  color:#9053c7;
+  font-weight: 100;
+  transition: all 0.5 ease-in-out;
+  width:80%;
+}
+header .search-area  input[type="text"]:hover{
+  background:lightgrey;
+
+}
+header .user-area{
+  display: inline-block;
+  float: right;
+  padding: 10px;
+}
+header .user-area a{
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  vertical-align:middle;
+  height: 30px;
+}
+header .user-area .notification{
+  position: relative;
+  font-size: 15px;
+  padding-top: 2px;
+}
+header .user-area  .circle{
+  background:red;
+  width: 15px;
+  border-radius: 50%;
+  font-size: 11px;
+  color:white;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  left:7px;
+
+}
+header .user-area .user-img{
+  background: url(https://images-na.ssl-images-amazon.com/images/M/MV5BMTgxMTc1MTYzM15BMl5BanBnXkFtZTgwNzI5NjMwOTE@._V1_UY256_CR16,0,172,256_AL_.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 3px;
+  padding: 10px;
+}
+.user-area .add{
+  font-size: 12px;
+  font-weight: 300;
+  display: inline-block;
+  padding-top: 5px;
+}
+.fa-caret-down{
+  postion:relative;
+  top:-8px;
+}
+textarea:focus, input:focus, input.active{
+  background: lightgrey;
+  outline:none;
+}
+.content-area{
+  margin-left: 280px;
+  padding: 15px;
+}
+heading{
+   color:black;
+   text-align: center;
+}
+/*Manage-admin.html*/
+.table-section{
+width:900px;
+background-color: white;
+border-top-style: 3px solid black;
+
+
+}
+.admin-table{
+  text-align: center;
+  border-spacing: 2px;
+  border-color: grey;
+
+}
+.admin-table th{
+  width:250px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding: 8px;
+
+}
+.admin-table td{
+  padding: 8px;
+}
+#mg-content-area{
+  margin-left: 280px;
+  padding: 15px;
+}
+#mg-content-area tr:nth-child(even){background-color: #f2f2f2;}
+
+#mg-content-area tr:hover {background-color: #ddd;}
+tbody{
+  display: table-row-group;
+  vertical-align: middle;
+}
+.manage-button{
+  float:right;
+
+  padding: 10px;
+}
+hr {
+  padding: 5px;
+}
+
+/*-------------add admin------------*/
+
+.button-style{
+  background-color:#421f60;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 80%;
+
+  }
+#add-admin{
+  display: none;
+  padding: 50px
+}
+#add-admin form{
+  background: #fff;
+  padding: 4em 4em 2em;
+  max-width: 400px;
+  margin: 50px auto 0;
+  box-shadow: 0 0 1em #222;
+  border-radius: 2px;
+}
+#add-admin p{
+  margin: 0 0 3em 0;
+  position: relative;
+}
+#add-admin input, select{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    margin:0;
+  }
+#add-admin input[type="text"], input[type="password"], select{
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    font-size: 16px;
+    padding: .9em .5em;
+    border-radius: 2px;
+  }
+#add-admin input[type="text"]:focus, input[type="password"], select :focus {
+    background: #fff
+  }
+  label{
+     position: absolute;
+     left: 8px;
+     top: 12px;
+     color: #999;
+     font-size: 16px;
+     display: inline-block;
+     padding: 4px 10px;
+     font-weight: 400;
+     background-color: rgba(255,255,255,0);
+     @include transition(color .3s, top .3s, background-color .8s);
+   }
+#add-admin .floatLabel{
+       top: -11px;
+       background-color: rgba(255,255,255,0.8);
+       font-size: 14px;
+     }
+#add-admin button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+
+  opacity: 0.9;}
+
+#add-admin button:hover{
+    opacity:1;
+}
+#add-admin .add-amin-btn{
+  padding: 14px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#add-admin .cancelbtn  {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+#add-admin .cancelbtn, .add-amin-btn {
+  float: left;
+  width: 50%;
+  display: inline-block;
+}

@@ -1,0 +1,239 @@
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #800000;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color:#b3b3b3;
+
+}
+
+.sidebar .logo {
+    display: block;
+    max-width: 80px;
+    margin: 0 15px;
+  }
+.page-content{
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+.button-container{
+  width:100%
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+.form-button{
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  background: #57b846;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+}
+.form-button:hover{
+  background-color:#333333;
+}
+/*.page-sidebar{
+  height:100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow: hidden;
+  padding-top:20px;
+  color:blue;
+
+  }
+.page-sidebar .logo {
+    display: block;
+    max-width: 80px;
+    margin: 0 15px;
+  }
+ul {
+    list-style: none;
+  }
+.page-sidebar nav{
+  min-height: 100%;
+}
+a {
+  text-decoration: none;
+}
+.page-sidebar .admin-menu .menu-heading h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 12px;
+  margin-top: 12px;
+  color: black;
+}
+
+.page-sidebar .admin-menu .menu-heading{
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 12px;
+    color: red;
+  }
+.page-sidebar .admin-menu a{
+    text-decoration: none;
+    display: block;
+    align-items: center;
+    font-size: 25px;
+    padding: 6px 8px 6px 16px;
+  }
+.page-sidebar a:hover{
+    color:yellow;
+  }
+.page-content {
+    position: flexible;
+    left: 220px;
+    width: calc(100% - 220px));
+    min-height: 100vh;
+    padding: 30px;
+    color: black;
+    background: grey;
+  }
+
+  :root {
+  --page-header-bgColor: #white;
+  --page-header-bgColor-hover: #grey;
+  --page-header-txtColor: #black;
+  --page-header-headingColor: #7black;
+  --page-header-width: 220px;
+  --page-content-bgColor: #f0f1f6;
+  --page-content-txtColor: #blue;
+  --page-content-blockColor: #fff;
+  /*--white: #242e42;
+  --black: #333;
+  --blue: #00b9eb;
+  --red: #ec1848;
+  --border-radius: 4px;
+  --box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
+}
+.page-header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+overflow: auto;
+padding-top: 20px;
+width: var(--page-header-width);
+color: var(--page-header-txtColor);
+background: var(--page-header-bgColor);
+}
+svg {
+  display: block;
+}
+.page-header .logo {
+  display: block;
+  max-width: 120px;
+  margin: 0 15px;
+}
+.page-header nav {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.page-header .admin-menu {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 35px;
+}
+.page-header .admin-menu li:nth-last-child(2) {
+  margin-bottom: 35px;
+}
+
+.page-header .admin-menu li:last-child {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.page-header .admin-menu li > * {
+  width: 100%;
+  padding: 12px 15px;
+}
+.page-header .admin-menu .menu-heading h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 12px;
+  margin-top: 12px;
+  color: var(--page-header-headingColor);
+}
+
+.page-header .admin-menu svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--page-header-txtColor);
+  margin-right: 10px;
+  transition: fill 0.2s;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+button {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+button,
+input {
+  border: none;
+}
+.page-header .admin-menu a,
+.page-header .admin-menu button {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.page-header .admin-menu a:hover,
+.page-header .admin-menu a:focus,
+.page-header .admin-menu button:hover,
+.page-header .admin-menu button:focus {
+  background: var(--page-header-bgColor-hover);
+  color: var(--blue);
+  outline: none;
+}
+
+.page-header .admin-menu a:hover svg,
+.page-header .admin-menu a:focus svg,
+.page-header .admin-menu button:hover svg,
+.page-header .admin-menu button:focus svg {
+  fill: var(--blue);
+}*/
